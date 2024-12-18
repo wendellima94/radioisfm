@@ -21,7 +21,7 @@ jQuery(document).ready(function (a) {
       },
       [
         {
-          title: "Rádio ON",
+          title: "Rádio ISFM - Santos",
           artist: "Tocando emoções que conectam",
           mp3: "https://cast4.hoost.com.br:20214/stream",
           poster: "./js/mp3/browse/1077.png",
@@ -220,7 +220,7 @@ jQuery(document).ready(function (a) {
   }),
     (adonisAllPlaylists[0] = [
       {
-        title: "Rádio ON",
+        title: "Rádio ISFM - Santos",
         artist: "Tocando emoções que conectam",
         mp3: "https://cast4.hoost.com.br:20214/stream",
         poster: "./js/mp3/browse/1077.png",
