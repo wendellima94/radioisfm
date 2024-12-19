@@ -23,7 +23,7 @@ jQuery(document).ready(function (a) {
         {
           title: "Rádio ISFM - Santos",
           artist: "Tocando emoções que conectam",
-          mp3: "https://cast4.hoost.com.br:20214/stream",
+          mp3: "https://r16.ciclano.io:15043/stream",
           poster: "./js/mp3/browse/1077.png",
         },
       ],
@@ -37,7 +37,7 @@ jQuery(document).ready(function (a) {
         keyEnabled: !1,
         audioFullScreen: !0,
         display: !1,
-        autoPlay: !1,
+        autoPlay: true,
       }
     )),
       a("#" + adonisPlayerID).bind(a.jPlayer.event.loadeddata, function (e) {
@@ -222,7 +222,7 @@ jQuery(document).ready(function (a) {
       {
         title: "Rádio ISFM - Santos",
         artist: "Tocando emoções que conectam",
-        mp3: "https://cast4.hoost.com.br:20214/stream",
+        mp3: "https://r16.ciclano.io:15043/stream",
         poster: "./js/mp3/browse/1077.png",
       },
     ]),
