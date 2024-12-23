@@ -66,9 +66,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const sliderTrack = document.querySelector('.slider-track');
   const prevBtn = document.querySelector('.prev-btn');
   const nextBtn = document.querySelector('.next-btn');
-
   const slides = sliderTrack.children.length;
   const visibleSlides = 4; // Quantidade de slides visíveis
+  const slideWidth = 100 / slides; // Porcentagem da largura de um slide
   let currentIndex = 0;
 
   prevBtn.addEventListener('click', () => {
@@ -86,8 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   function updateSliderPosition() {
-    const offset = currentIndex * -25; // Move em porcentagem, 25% por slide
+    const offset = currentIndex * -slideWidth; // Move 1 slide por vez
     sliderTrack.style.transform = `translateX(${offset}%)`;
   }
 });
-

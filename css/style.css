@@ -3,7 +3,7 @@ bg-colors
 
 f9d045	
 #0f0e37
-#f1db33
+#eeca24
 -------------------------
 
 CSS INDEX
@@ -47,7 +47,7 @@ html {
   color: #fff;
 }
 a {
-  color: #fa5b41;
+  color: #212529;
   text-decoration: none;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -2553,7 +2553,7 @@ ul.tranding_more_option li a .opt_icon i:before {
   width: 100%;
   height: 100%;
   float: left;
-  background-color: #f1db33;
+  background-color: #eeca24;
   position: relative;
   padding: 100px 0;
 }
@@ -2567,11 +2567,11 @@ ul.tranding_more_option li a .opt_icon i:before {
 .download_app_store h1 {
   font-size: 50px;
   text-transform: uppercase;
-  color: #ebebeb;
+  color: #000;
   margin-bottom: 20px;
 }
 .download_app_store p {
-  color: #ffffff;
+  color: #000;
   margin-bottom: 30px;
 }
 .app_btn {
@@ -2588,9 +2588,9 @@ ul.tranding_more_option li a .opt_icon i:before {
   position: relative;
   overflow: hidden;
   font-size: 16px;
-  color: #fff;
+  color: #000;
   font-family: "Oswald";
-  border: 2px solid #fff;
+  border: 2px solid #000;
   line-height: 48px;
   border-radius: 50px;
   text-transform: uppercase;
@@ -2601,8 +2601,8 @@ ul.tranding_more_option li a .opt_icon i:before {
   transition: all 0.5s;
 }
 .app_btn a:hover {
-  color: #fa5840;
-  background: #fff;
+  color: #fae140;
+  background: #0f0e37;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -2619,7 +2619,10 @@ ul.tranding_more_option li a .opt_icon i:before {
   float: left;
   margin-right: 20px;
 }
-.download_app_logo li a {
+.download_app_logo li:nth-child(1) a {
+  color: green;
+}
+.download_app_logo li:nth-child(2) a {
   color: #fff;
 }
 .download_app_logo li a i:before {
@@ -7084,7 +7087,7 @@ span.ovrly_text2 {
 .index3_lang_wrapper .modal-content,
 .index3_login_modal .modal-content,
 .index3_search_bar .res_search_box {
-  background: #f1db33;
+  background: #eeca24;
 }
 /* cor do corpo projeto */
 .index3_slider_wrapper
@@ -7194,7 +7197,7 @@ span.ovrly_text2 {
 
 /* cor do player */
 .index3_adoins_wrapper .adonis-player-horizontal {
-  background: #f1db33;
+  background: #eeca24;
 }
 .index3_adoins_wrapper .jp-seek-bar:before,
 .adonis-playlist-player .jp-seek-bar:before {
@@ -7952,6 +7955,6 @@ button.next {
 }
 
 button:hover {
-  background-color: #f1db33; 
+  background-color: #eeca24; 
   border-radius: 10px;
 }

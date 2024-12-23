@@ -1,75 +1,130 @@
+/* CSS Atual */
 .slider-container {
-    position: relative;
-    width: 100%;
-    height: 65vh;
-    overflow: hidden;
-    aspect-ratio: 9 / 16;
-    padding: 10px 180px;
+  position: relative;
+  width: 100vw;
+  height: 42vh;
+  overflow: hidden;
+  aspect-ratio: 9 / 16;
+  padding: 10px 180px;
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+  height: auto;
+}
+
+.slider-track {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  transition: transform 0.4s ease-in-out;
+}
+
+.slider-track img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  padding: 20px 20px;
+  aspect-ratio: 9 / 16;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Wrapper para hover */
+.slider-track img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  background-color: rgb(208, 30, 30); /* Invisível por padrão */
+  transition: background-color 0.3s ease;
+}
+
+/* Efeito hover */
+.slider-track img:hover {
+  transform: scale(1.1); /* Zoom mais suave */
+}
+
+.slider-track img:hover::after {
+  background-color: rgba(0, 0, 0, 0.2); /* Overlay leve */
+}
+
+/* Botões */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  /* Celulares */
+  .slider-container {
+      display: flex;
+      height: 50vh;
+      padding: 10px 45px;
   }
-  
-  .slider {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    height: auto;
-  }
-  
-  .slider-track {
-    display: flex;
-    transition: transform 0.4s ease-in-out;
-  }
-  
+
   .slider-track img {
-    width: 25%;
-    height: 400px;
-    object-fit: cover;
-    padding: 0 20px;
-    aspect-ratio: 9 / 16;
-    position: relative;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
+      width: 175px;
+      height: 175px;
+      padding: 10px;
   }
-  
-  /* Wrapper para hover */
-  .slider-track img::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(208, 30, 30); /* Invisível por padrão */
-    transition: background-color 0.3s ease;
-  }
-  
-  /* Efeito hover */
-  .slider-track img:hover {
-    transform: scale(1.2); /* Zoom mais suave */
-  }
-  
-  .slider-track img:hover::after {
-    background-color: rgba(0, 0, 0, 0.2); /* Overlay leve */
-  }
-  
-  /* Botões */
+
   .slider-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-    border-radius: 50%;
+      padding: 8px;
   }
-  
-  .prev-btn {
-    left: 10px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Tablets */
+  .slider-container {
+    display: flex;
+      height: 40vh;
+      padding: 4px 60px;
   }
-  
-  .next-btn {
-    right: 10px;
+
+  .slider-track img {
+      width: 300px;
+      height: 300px;
+      padding: 15px;
   }
-  
+}
+
+@media (min-width: 1025px) {
+  /* Telas grandes */
+  .slider-container {
+      height: 42vh;
+      padding: 10px 180px;
+  }
+
+  .slider-track img {
+      width: 250px;
+      height: 250px;
+      padding: 20px;
+  }
+}
+
+
+
+/* insta feed  */
+
