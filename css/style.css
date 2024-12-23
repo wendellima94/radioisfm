@@ -2611,7 +2611,6 @@ ul.tranding_more_option li a .opt_icon i:before {
 }
 .download_app_logo {
   float: left;
-  width: auto;
   padding-left: 30px;
   padding-top: 14px;
 }
@@ -2620,13 +2619,27 @@ ul.tranding_more_option li a .opt_icon i:before {
   margin-right: 20px;
 }
 .download_app_logo li:nth-child(1) a {
-  color: green;
+  color: rgb(22, 171, 37);
+  transition: transform 0.3s ease, color 0.3s ease;
 }
+.download_app_logo li:nth-child(1) a:hover {
+  color: rgb(1, 74, 12);
+  transform: scale(1.4); /* Aumenta o tamanho em 10% */
+}
+
 .download_app_logo li:nth-child(2) a {
-  color: #fff;
+  color: #626161;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
+
+
+.download_app_logo li:nth-child(2) a:hover {
+  color: rgb(242, 255, 244);
+  transform: scale(2.0); /* Aumenta o tamanho em 10% */
+}
+
 .download_app_logo li a i:before {
-  font-size: 22px;
+  font-size: 40px;
 }
 /***---pricing plan wrapper css-----*****/
 .pricing_plan_wrapper {
@@ -4373,28 +4386,28 @@ body.off-canvas-overlay-on {
 }
 
 @media (max-width: 767px) {
-  
-button.prev, button.next {
-  position: absolute; 
-  transform: translateY(-50%);
-  background-color: transparent !important; 
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 28px !important;
-  z-index: 1; 
-}
+  button.prev,
+  button.next {
+    position: absolute;
+    transform: translateY(-50%);
+    background-color: transparent !important;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 28px !important;
+    z-index: 1;
+  }
 
-button.prev {
-  margin-top: 30px;
-  left: 42% !important; 
-}
+  button.prev {
+    margin-top: 30px;
+    left: 42% !important;
+  }
 
-button.next {
-  margin-top: 30px;
-  right: 42% !important; 
-}
+  button.next {
+    margin-top: 30px;
+    right: 42% !important;
+  }
   .adonis-player-wrap .adonis-playlist.off-canvas-right.show {
     transform: translate(-100%, 0);
   }
@@ -7744,7 +7757,6 @@ span.ovrly_text2 {
   #blog-container {
     grid-template-columns: repeat(2, 1fr);
     padding: 0 !important;
-
   }
 }
 
@@ -7753,7 +7765,6 @@ span.ovrly_text2 {
     grid-template-columns: 1fr;
     padding: 40px 0 !important;
     height: 100%;
-    
   }
   .main_slider_wrapper {
     height: 400px;
@@ -7780,7 +7791,6 @@ span.ovrly_text2 {
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
     justify-items: center;
-
   }
   .main_slider_wrapper {
     height: auto;
@@ -7793,9 +7803,7 @@ span.ovrly_text2 {
   }
 }
 
-
-
-@media(max-width: 912px) {
+@media (max-width: 912px) {
   #blog-container {
     grid-template-columns: 1fr;
     padding: 100px 0 !important;
@@ -7858,7 +7866,9 @@ carousel {
 }
 
 .carousel-item {
-  height: calc(100vh - 60px); /* Altura total da tela menos a altura do cabeçalho */
+  height: calc(
+    100vh - 60px
+  ); /* Altura total da tela menos a altura do cabeçalho */
 }
 
 .carousel-item img {
@@ -7924,16 +7934,16 @@ input:focus ~ .keys {
   width: 100vw;
   margin: 0;
   padding: 0;
-  position: relative; 
-
+  position: relative;
 }
 
 .prop-image {
   width: 100vw;
   object-fit: cover;
 }
-button.prev, button.next {
-  position: absolute; 
+button.prev,
+button.next {
+  position: absolute;
   transform: translateY(-50%);
   background-color: transparent;
   color: white;
@@ -7946,15 +7956,15 @@ button.prev, button.next {
 
 button.prev {
   margin-top: 30px;
-  left: 46%; 
+  left: 46%;
 }
 
 button.next {
   margin-top: 30px;
-  right: 46%; 
+  right: 46%;
 }
 
 button:hover {
-  background-color: #eeca24; 
+  background-color: #eeca24;
   border-radius: 10px;
 }
