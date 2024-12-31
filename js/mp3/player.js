@@ -37,7 +37,6 @@ jQuery(document).ready(function (a) {
         keyEnabled: !1,
         audioFullScreen: !0,
         display: !1,
-        autoPlay: true,
       }
     )),
       a("#" + adonisPlayerID).bind(a.jPlayer.event.loadeddata, function (e) {
@@ -206,7 +205,7 @@ jQuery(document).ready(function (a) {
           (currentPlaylistId = e)),
           a("#" + adonisPlayerID).data().jPlayer.status.paused
             ? setTimeout(function () {
-                adonisPlaylist.play(0);
+                adonisPlaylist.play();
               }, 700)
             : adonisPlaylist.pause();
       }),
@@ -234,4 +233,29 @@ jQuery(document).ready(function (a) {
           adonisPlaylist.setPlaylist(adonisAllPlaylists[0]);
         }, 5e3);
     });
+});
+
+jQuery(document).ready(function($) {
+  "use strict";
+
+  // Função para alternar entre play e pause
+  $('#playButton').click(function(e) {
+    e.preventDefault();
+
+    var jPlayerStatus = $("#" + adonisPlayerID).data("jPlayer").status;
+
+    if (jPlayerStatus.paused) {
+      // Se estiver pausado, dá play no item atual
+      adonisPlaylist.play(jPlayerStatus.current); // Continua a reprodução do item atual
+      // Troca o ícone para o de pause
+      $('#playIcon path').attr('d', 'M6 4v16h4V4H6zm8 0v16h4V4h-4z'); // Ícone de pause
+    } else {
+      // Se já estiver tocando, dá pause
+      adonisPlaylist.pause();
+      // Troca o ícone de volta para o de play
+      $('#playIcon path').attr('d', 'M8 5v14l11-7z'); // Ícone de play
+    }
+  });
+
+  // A lógica de inicialização do player e outras funções já existentes continuam como estão...
 });

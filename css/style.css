@@ -2290,6 +2290,7 @@ ul.tranding_more_option li a .opt_icon i:before {
   background-size: cover;
   position: relative;
   padding-top: 42px;
+
 }
 .concert_overlay {
   position: absolute;
@@ -3860,6 +3861,7 @@ body.off-canvas-overlay-on {
 .adonis-player-wrap .adonis-player-horizontal {
   background: #fff;
   position: relative;
+  z-index: 0;
 }
 .adonis-player-wrap h1,
 .adonis-player-wrap .h1,
@@ -4396,7 +4398,7 @@ body.off-canvas-overlay-on {
     padding: 10px;
     cursor: pointer;
     font-size: 28px !important;
-    z-index: 1;
+    z-index: 0;
   }
 
   button.prev {
@@ -7080,8 +7082,8 @@ span.ovrly_text2 {
 .index3_sidebar,
 .index3_sidebar #toggle_close,
 .index3_sidebar #cssmenu > ul > li > a {
-  background: #080729 !important;
-  color: #fff;
+  background: #fff !important;
+  color: #000;
 }
 .index3_sidebar #cssmenu ul > li.has-sub > a:after,
 .index3_sidebar #cssmenu ul > li.has-sub > a:before {
@@ -7968,3 +7970,82 @@ button:hover {
   background-color: #eeca24;
   border-radius: 10px;
 }
+
+
+.player-bg-top {
+  width: 100%;
+  height: 23vh;
+  margin: 8px 0;
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  padding: 10px 45px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  color: white;
+  background: #eeca24;
+  transition: 0.5s;
+  box-shadow: 6px 6px 0 black;
+  transform: skewX(-15deg);
+}
+
+.cta:focus {
+  outline: none;
+}
+
+.cta:hover {
+  transition: 0.3s;
+  box-shadow: 8px 8px 0 #FBC638;
+  background: #fff;
+  border: 1px solid black;
+  color: #fff;
+
+}
+
+.cta:hover span {
+  color: #000;
+}
+
+.cta span:hover {
+  color: #000 !important;
+}
+
+.cta span {
+  transform: skewX(15deg);
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.cta span:nth-child(2) {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+
+}
+
+svg {
+  width: 40px;
+  height: 40px;
+}
+
+
+

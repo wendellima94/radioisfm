@@ -63,7 +63,7 @@
   border: none;
   padding: 10px;
   cursor: pointer;
-  z-index: 10;
+  z-index: 1;
   border-radius: 50%;
 }
 
@@ -187,3 +187,5 @@
     flex: 0 1 100%; /* Em celulares, cada item ocupa 100% da largura */
   }
 }
+
+
