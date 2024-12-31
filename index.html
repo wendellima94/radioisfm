@@ -35,6 +35,7 @@ Author:Wendel de Lima
     <link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/modal.css" />
     <!--favicon-->
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
   </head>
@@ -51,7 +52,7 @@ Author:Wendel de Lima
     <div class="m24_main_wrapper">
       <!-- ... -->
       <div id="sidebar" class="bounce-to-right index3_sidebar">
-        <div id="toggle_close">×</div>
+        <div id="toggle_close">× </div>
         <div id="cssmenu">
           <a href="index.html">
             <img
@@ -165,7 +166,7 @@ Author:Wendel de Lima
                   >
                 </li>
                 <li>
-                  <a href="#contacts" style="font-size: 16px; border: 1px solid white; border-radius: 12px; text-align: center; color: #ececec;" class="gc_main_navigation">Contato para Parcerias</a>
+                  <a href="#contacts" style="font-size: 18px;margin: 0 20px; border: 1px solid #000; border-radius: 12px; text-align: center; color: #fff; background-color: #eeca24;" class="gc_main_navigation">Contato para Parcerias</a>
                 </li>
               </ul>
             </div>
@@ -613,7 +614,7 @@ Author:Wendel de Lima
           <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
               <div class="add_banner_img_wrapper ms_cover">
-                <a href="https://istvshop.com.br/"
+                <a target="_blank" href="https://istvshop.com.br/"
                   ><img
                     src="images/MUSICABRASILEIRA.png"
                     class="img-responsive"
@@ -635,32 +636,155 @@ Author:Wendel de Lima
         </div>
       </div>
 
-      
 <!-- carrousel  -->
+
 <div class="slider-container">
   <button class="slider-btn prev-btn">⟵</button>
   <div class="slider">
     <div class="slider-track">
-      <img src="images/1.png" alt="Imagem 1">
-      <img src="images/2.png" alt="Imagem 2">
-      <img src="images/3.png" alt="Imagem 3">
-      <img src="images/4.png" alt="Imagem 4">
-      <img src="images/5.png" alt="Imagem 5">
-      <img src="images/2.png" alt="Imagem 6">
-      <img src="images/3.png" alt="Imagem 7">
-      <img src="images/5.png" alt="Imagem 8">
-      <img src="images/1.png" alt="Imagem 1">
-      <img src="images/2.png" alt="Imagem 2">
-      <img src="images/3.png" alt="Imagem 3">
-      <img src="images/4.png" alt="Imagem 4">
-      <img src="images/5.png" alt="Imagem 5">
-      <img src="images/2.png" alt="Imagem 6">
-      <img src="images/3.png" alt="Imagem 7">
-      <img src="images/5.png" alt="Imagem 8">
-    </div>
-  </div>
+   
+      <div class="section full-height">
+        <input class="modal-btn" type="checkbox" id="modal-btn" name="modal-btn"/>
+        <label for="modal-btn">      
+          <img src="images/1.png" alt="ISFM Noticias">
+        </label>         
+        <div class="modal">     
+          <div class="modal-wrap">  
+            <section class="isfm-news">
+              <header>
+                <h1>ISFM News</h1>
+                <p>O melhor do jornalismo para você!</p>
+              </header>
+              <article>
+                <h2>Programação</h2>
+                <p>De segunda a sexta-feira, das <strong>07:00</strong> às <strong>08:30</strong>, fique por dentro das principais notícias e análises do dia.</p>
+              </article>
+              <footer>
+                <p>ISFM News: Informação com credibilidade, onde quer que você esteja.</p>
+              </footer>
+            </section>
+          </div>         
+        </div>  
+      </div>
+
+      <div class="section full-height">
+        <!-- Surf Nation -->
+        <input class="modal-btn" type="checkbox" id="modal-btn-surf" />
+        <label for="modal-btn-surf">
+          <img src="images/2.png" alt="ISFM Surf Nation">
+        </label>
+        <div class="modal">
+          <div class="modal-wrap">
+            <section class="isfm-surf">
+              <header>
+                <h1>Surf Nation</h1>
+                <p>Informativo Esportes Náuticos</p>
+              </header>
+              <article>
+                <h2>Programação</h2>
+                <p>
+                  Condições balneabilidade, marés, vento, ondas.<br />
+                  <strong>Diário manhãs</strong>.
+                </p>
+              </article>
+              <footer>
+                <p>Surf Nation: Seu guia para esportes náuticos.</p>
+              </footer>
+            </section>
+          </div>
+        </div>
+      </div>
+      
+      <div class="section full-height">
+        <!-- ISFM Rock -->
+        <input class="modal-btn" type="checkbox" id="modal-btn-rock" />
+        <label for="modal-btn-rock">
+          <img src="images/3.png" alt="ISFM Rock">
+        </label>
+        <div class="modal">
+          <div class="modal-wrap">
+            <section class="isfm-rock">
+              <header>
+                <h1>ISFM Rock</h1>
+                <p>O melhor do Rock para você!</p>
+              </header>
+              <article>
+                <h2>Programação</h2>
+                <p>
+                  Diário com <strong>02 edições</strong>: <br />
+                  <strong>Manhã</strong> e <strong>Tarde</strong>.
+                </p>
+              </article>
+              <footer>
+                <p>ISFM Rock: Entretenimento que movimenta sua rotina.</p>
+              </footer>
+            </section>
+          </div>
+        </div>
+      </div>
+      
+      <div class="section full-height">
+        <!-- ISFM Esportes -->
+        <input class="modal-btn" type="checkbox" id="modal-btn-esportes" />
+        <label for="modal-btn-esportes">
+          <img src="images/4.png" alt="ISFM Esportes">
+        </label>
+        <div class="modal">
+          <div class="modal-wrap">
+            <section class="isfm-esportes">
+              <header>
+                <h1>ISFM Esportes</h1>
+                <p>Pocket informativo esportivo</p>
+              </header>
+              <article>
+                <h2>Programação</h2>
+                <p>
+                  Futebol, basketball, volley.<br />
+                  <strong>Diário injetado durante a programação</strong>.<br />
+                  Horário: <strong>07:00 às 19:00</strong>.
+                </p>
+              </article>
+              <footer>
+                <p>ISFM Esportes: Sempre com você no esporte!</p>
+              </footer>
+            </section>
+          </div>
+        </div>
+      </div>
+      
+      <div class="section full-height">
+        <!-- ISFM News -->
+        <input class="modal-btn" type="checkbox" id="modal-btn-news" />
+        <label for="modal-btn-news">
+          <img src="images/5.png" alt="ISFM News">
+        </label>
+        <div class="modal">
+          <div class="modal-wrap">
+            <section class="isfm-news">
+              <header>
+                <h1>ISFM News</h1>
+                <p>Pocket informativo notícias gerais</p>
+              </header>
+              <article>
+                <h2>Programação</h2>
+                <p>
+                  Diário injetado durante programação.<br />
+                  Horário: <strong>07:00 às 19:00</strong>.
+                </p>
+              </article>
+              <footer>
+                <p>ISFM News: Informação na hora certa!</p>
+              </footer>
+            </section>
+          </div>
+        </div>
+      </div>
+      
+    </div>  <!-- Fechando a tag .slider-track -->
+
+  </div> <!-- Fechando a tag .slider -->
   <button class="slider-btn next-btn">⟶</button>
-</div>      
+</div> <!-- Fechando a tag .slider-container -->
 
 <!-- end carrousel -->
       
@@ -752,7 +876,7 @@ Author:Wendel de Lima
       <div class="pricing_plan_wrapper index3_pricing_plans ms_cover"></div>
 
       <!-- blog wrapper start -->
-      <div  class="blog-container">
+      <div id="blog-container" class="blog-container">
         <div class="insta-feed-container">
           <iframe src="https://www.instagram.com/p/DDubIhgBCCr/embed" class="insta-frame"></iframe>
         </div>
@@ -1136,139 +1260,7 @@ Author:Wendel de Lima
         </div>
       </div>
     </div>
-    <!-- login register  modal section -->
-    <div
-      class="modal fade lang_ms_banner index3_login_modal"
-      id="login_modal"
-      role="dialog"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <button type="button" class="close" data-dismiss="modal">
-            &times;
-          </button>
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-              <div class="login_form_wrapper">
-                <div class="icon_form comments_form">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="full_name"
-                    placeholder="Enter Email Address*"
-                  />
-                  <i class="fas fa-envelope"></i>
-                </div>
-                <div class="icon_form comments_form">
-                  <input
-                    type="password"
-                    class="form-control"
-                    placeholder="Enter Password *"
-                  />
-                  <i class="fas fa-lock"></i>
-                </div>
-                <div class="login_remember_box">
-                  <label class="control control--checkbox"
-                    >keep me signed in
-                    <input type="checkbox" />
-                    <span class="control__indicator"></span>
-                  </label>
-                  <a href="#" class="forget_password"> Forgot Password ? </a>
-                </div>
-              </div>
-              <div class="lang_apply_btn_wrapper ms_cover">
-                <div class="lang_apply_btn">
-                  <a href="#">login now</a>
-                </div>
-                <div class="cancel_wrapper">
-                  <a href="#" class="" data-dismiss="modal">cancel</a>
-                </div>
-                <div class="dont_have_account ms_cover">
-                  <p>
-                    Don’t have an acount ?
-                    <a href="#register_modal" data-toggle="modal"
-                      >register here</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="modal fade lang_ms_banner index3_login_modal"
-      id="register_modal"
-      role="dialog"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <button type="button" class="close" data-dismiss="modal">
-            &times;
-          </button>
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-              <div class="m24_language_box ms_cover">
-                <h1>Register / Sign Up</h1>
-                <p>for unlimited music streaming & a personalised experience</p>
-              </div>
-              <div class="login_form_wrapper">
-                <div class="icon_form comments_form">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="first_name"
-                    placeholder="Enter your name"
-                  />
-                  <i class="fas fa-user"></i>
-                </div>
-                <div class="icon_form comments_form">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="full_name"
-                    placeholder="Enter Email Address*"
-                  />
-                  <i class="fas fa-envelope"></i>
-                </div>
-                <div class="icon_form comments_form">
-                  <input
-                    type="password"
-                    class="form-control"
-                    placeholder="Enter Password *"
-                  />
-                  <i class="fas fa-lock"></i>
-                </div>
-                <div class="icon_form comments_form">
-                  <input
-                    type="password"
-                    class="form-control"
-                    placeholder="confirm password*"
-                  />
-                  <i class="fas fa-lock"></i>
-                </div>
-              </div>
-              <div class="lang_apply_btn_wrapper ms_cover">
-                <div class="lang_apply_btn">
-                  <a href="#">register</a>
-                </div>
-                <div class="cancel_wrapper">
-                  <a href="#" class="" data-dismiss="modal">cancel</a>
-                </div>
-                <div class="dont_have_account ms_cover">
-                  <p>
-                    Don’t have an acount ?
-                    <a href="#login_modal" data-toggle="modal">login here</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- login register  modal end -->
+  
     <!-- playllist wrapper start -->
     <div class="adonis-player-wrap index3_adoins_wrapper">
       <div

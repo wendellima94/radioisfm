@@ -90,3 +90,5 @@ document.addEventListener('DOMContentLoaded', () => {
     sliderTrack.style.transform = `translateX(${offset}%)`;
   }
 });
+
+

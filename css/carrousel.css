@@ -3,14 +3,11 @@
   position: relative;
   width: 100vw;
   height: 42vh;
-  overflow: hidden;
-  aspect-ratio: 9 / 16;
   padding: 10px 180px;
 }
 
 .slider {
   display: flex;
-  overflow: hidden;
   height: auto;
 }
 
@@ -63,7 +60,7 @@
   border: none;
   padding: 10px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 10;
   border-radius: 50%;
 }
 
@@ -114,8 +111,9 @@
 @media (min-width: 1025px) {
   /* Telas grandes */
   .slider-container {
-      height: 42vh;
+      height: 50vh;
       padding: 10px 180px;
+      display: flex;
   }
 
   .slider-track img {
@@ -187,5 +185,10 @@
     flex: 0 1 100%; /* Em celulares, cada item ocupa 100% da largura */
   }
 }
+
+
+
+
+
 
 
