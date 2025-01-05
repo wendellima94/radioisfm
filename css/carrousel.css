@@ -4,6 +4,7 @@
   width: 100vw;
   height: 42vh;
   padding: 10px 180px;
+  
 }
 
 .slider {
@@ -60,8 +61,8 @@
   border: none;
   padding: 10px;
   cursor: pointer;
-  z-index: 10;
   border-radius: 50%;
+  z-index: 1;
 }
 
 .prev-btn {
@@ -79,6 +80,8 @@
       display: flex;
       height: 50vh;
       padding: 10px 45px;
+      background-color: yellowgreen;
+
   }
 
   .slider-track img {
@@ -114,6 +117,7 @@
       height: 50vh;
       padding: 10px 180px;
       display: flex;
+      
   }
 
   .slider-track img {
@@ -140,7 +144,7 @@
   flex-wrap: wrap; /* Permite quebra de linha para os itens */
   justify-content: center; /* Centraliza os itens horizontalmente */
   align-items: center; /* Centraliza os itens verticalmente */
-  padding: 10px 12px; /* Espaçamento interno para o container */
+  padding: 10px 10px; /* Espaçamento interno para o container */
   box-sizing: border-box;
   width: 100%; /* Garante que o container ocupe toda a largura da tela */
   max-width: 1200px; /* Limita o tamanho máximo do container */
@@ -167,6 +171,7 @@
 /* Responsividade para telas médias (até 820px) */
 @media (max-width: 820px) {
   #blog-container {
+    background-color: aqua;
     justify-content: center; /* Centraliza os itens horizontalmente em telas menores */
   }
 

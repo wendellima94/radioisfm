@@ -7943,6 +7943,7 @@ input:focus ~ .keys {
   width: 100vw;
   object-fit: cover;
 }
+
 button.prev,
 button.next {
   position: absolute;
