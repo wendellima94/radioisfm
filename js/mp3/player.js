@@ -22,7 +22,7 @@ jQuery(document).ready(function (a) {
       [
         {
           title: "Rádio ISFM - Santos",
-          artist: "Tocando emoções que conectam",
+          artist: "Conectada com você!!!",
           mp3: "https://r16.ciclano.io:15043/stream",
           poster: "./js/mp3/browse/1077.png",
         },

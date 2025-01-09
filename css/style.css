@@ -3594,7 +3594,7 @@ body.off-canvas-overlay-on {
 .jp_adoins_wrapper {
   float: right;
   padding-right: 35px;
-}
+  }
 .jp_current_time_wrapepr {
   float: right;
   padding-right: 35px;
@@ -7219,7 +7219,7 @@ span.ovrly_text2 {
   background: #6e6d88;
 }
 .index3_adoins_wrapper .adonis-playlist {
-  background: #04031d;
+  background: #eeca24;
 }
 .index3_main_header .crm_mess_img_cont_wrapper p {
   color: rgba(255, 255, 255, 0.5) !important;
