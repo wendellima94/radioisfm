@@ -279,3 +279,18 @@ p {
   .full-height h1, h2 { 
     color: #e42c2c;
   }
+
+
+
+
+  /* stick bar */
+
+  .sticky-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 11;
+    background-color: #eeca24; /* Ajuste conforme o design */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adiciona um leve efeito */
+  }
+  
