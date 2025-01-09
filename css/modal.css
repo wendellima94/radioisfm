@@ -428,20 +428,7 @@ p {
   transform: translateX(-50px);
 }
 
-@media (max-width: 768px) {
-  .swiper-container {
-    display: flex;
-    flex-direction: column; /* Empilha os elementos verticalmente */
-    align-items: stretch; /* Os filhos ocupam 100% da largura */
-    gap: 10px; /* Espaço entre os elementos */
-  }
 
-  .nav-slider {
-    width: 100%; /* Ocupa toda a largura */
-    background-color: #1f2029;
-    height: auto; /* Ajusta altura automaticamente */
-  }
-}
 
 /* 
 swiper-container 
