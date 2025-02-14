@@ -428,8 +428,13 @@ p {
   transform: translateX(-50px);
 }
 
+@media (max-width: 768px) {
+  .swiper-container {}
 
+  .nav-slider {}
 
+  .swiper-container.nav-slider {}
+}
 /* 
 swiper-container 
 nav-slider 
