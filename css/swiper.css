@@ -6,6 +6,20 @@
   padding: 0;
   z-index: 1;
 }
+
+@media (max-width: 1024px) { /* Tablets e menores */
+  .swiper-container {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) { /* Apenas celulares */
+  .swiper-container {
+    display: none;
+  }
+}
+
+
 .swiper-container-no-flexbox .swiper-slide {
   float: left;
 }
